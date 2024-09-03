@@ -25,7 +25,7 @@ const AgeSexDistributionChart: React.FC = () => {
     useEffect(() => {
         const svg = d3.select(svgRef.current)
             .attr('width', 'auto')
-            .attr('height', 450)
+            .attr('height', 350)
             .style('overflow', 'visible')
             .style('margin-top', '20px')
             .style('padding-left', '50px');
