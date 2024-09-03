@@ -16,7 +16,7 @@ const initialDummyData = [
 const ControlAndDisplay: React.FC = () => {
     const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
     const [selectedMetric, setSelectedMetric] = useState('WBC');
-    const [sex, setSex] = useState('');
+    const [sex] = useState('');
     const [filteredData, setFilteredData] = useState(initialDummyData);
 
     const handleFilterApply = () => {
@@ -40,9 +40,9 @@ const ControlAndDisplay: React.FC = () => {
         setSelectedMetric(event.target.value);
     };
 
-    const handleSexChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-        setSex(event.target.value as string);
-    };
+    // const handleSexChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+    //     setSex(event.target.value as string);
+    // };
 
     return (
         <Box sx={{ padding: 2}}>
@@ -74,7 +74,7 @@ const ControlAndDisplay: React.FC = () => {
                             <InputLabel>Sex</InputLabel>
                             <Select
                                 value={sex}
-                                onChange={handleSexChange}
+                                // onChange={handleSexChange}
                                 label="Sex"
                             >
                                 <MenuItem value="Male">Male</MenuItem>

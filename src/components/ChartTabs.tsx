@@ -47,7 +47,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 const ChartTabs: React.FC = () => {
     const [value, setValue] = useState(0);
 
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
 
@@ -89,7 +89,7 @@ const ChartTabs: React.FC = () => {
                                 dataKey="value"
                                 label
                             >
-                                {ethnicityData.map((entry, index) => (
+                                {ethnicityData.map((_entry, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                 ))}
                             </Pie>
