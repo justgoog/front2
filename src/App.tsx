@@ -4,6 +4,7 @@ import OverviewSection from './components/OverviewSection';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import AddAlertIcon from '@mui/icons-material/AddAlert';
 import HematologyHistograms from './components/HematologyHistograms';
+import ControlAndDisplay from './components/ControlAndDisplay';
 
 function App() {
 
@@ -91,7 +92,7 @@ function App() {
                 </CardContent>
             </Card>
         </Box>
-
+        <ControlAndDisplay />
     </>
   )
 }
