@@ -54,7 +54,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, sx }) => {
         </Box>
         <Box
             sx={{
-                width: '47%',
+                width: '40%',
                 padding: 2,
                 textAlign: 'center',
             }}>
