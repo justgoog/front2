@@ -26,7 +26,7 @@ function App() {
             }}
         >
             <Card sx={{ width: '33%', marginRight: 2 }}>
-                <CardContent>
+                <CardContent sx={{  height: 169 }}>
                   {/* Todo: Move this icon-title pattern into component */}
                   <Box sx={{ display: 'inline-flex', alignItems: 'center', position: 'relative' }}>
                     <WhatshotIcon sx={{ mr: 1, mb: 1, color: 'purple' }} />
